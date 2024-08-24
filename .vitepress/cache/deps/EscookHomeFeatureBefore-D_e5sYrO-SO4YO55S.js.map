@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/@escook/vitepress-theme/dist/chunk/EscookHomeFeatureBefore-D_e5sYrO.js"],
+  "sourcesContent": ["import { defineComponent as u, onMounted as c } from \"vue\";\nconst p = u({\n  setup() {\n    return c(() => {\n      const r = [\"#f00\", \"#0f0\", \"#f0f\", \"#0ff\", \"#FE7300\", \"#008EFF\", \"red\", \"red\", \"red\", \"red\", \"red\"], e = document.querySelector(\".VPHomeFeatures\");\n      document.querySelectorAll(\".VPHomeFeatures .VPFeature\").forEach((t, s) => {\n        t.style.setProperty(\"--color\", r[s]), t.addEventListener(\"mousemove\", function(o) {\n          const f = o.pageX - this.offsetLeft, n = o.pageY - ((e == null ? void 0 : e.offsetTop) || 0) - this.offsetTop;\n          this.style.setProperty(\"--x\", f + \"px\"), this.style.setProperty(\"--y\", n + \"px\");\n        });\n      });\n    }), () => null;\n  }\n});\nexport {\n  p as default\n};\n"],
+  "mappings": ";;;;;;;AACA,IAAM,IAAI,gBAAE;AAAA,EACV,QAAQ;AACN,WAAO,UAAE,MAAM;AACb,YAAM,IAAI,CAAC,QAAQ,QAAQ,QAAQ,QAAQ,WAAW,WAAW,OAAO,OAAO,OAAO,OAAO,KAAK,GAAG,IAAI,SAAS,cAAc,iBAAiB;AACjJ,eAAS,iBAAiB,4BAA4B,EAAE,QAAQ,CAAC,GAAG,MAAM;AACxE,UAAE,MAAM,YAAY,WAAW,EAAE,CAAC,CAAC,GAAG,EAAE,iBAAiB,aAAa,SAAS,GAAG;AAChF,gBAAM,IAAI,EAAE,QAAQ,KAAK,YAAY,IAAI,EAAE,UAAU,KAAK,OAAO,SAAS,EAAE,cAAc,KAAK,KAAK;AACpG,eAAK,MAAM,YAAY,OAAO,IAAI,IAAI,GAAG,KAAK,MAAM,YAAY,OAAO,IAAI,IAAI;AAAA,QACjF,CAAC;AAAA,MACH,CAAC;AAAA,IACH,CAAC,GAAG,MAAM;AAAA,EACZ;AACF,CAAC;",
+  "names": []
+}
