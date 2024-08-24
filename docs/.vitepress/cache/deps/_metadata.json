@@ -1,49 +1,49 @@
 {
-  "hash": "fe85d048",
-  "configHash": "1aa89d4e",
+  "hash": "45d215b0",
+  "configHash": "c3589d86",
   "lockfileHash": "9f8690e4",
-  "browserHash": "8a33ffe6",
+  "browserHash": "53c293f5",
   "optimized": {
     "vue": {
-      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "d78142ee",
+      "fileHash": "493afdda",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "d04c37ef",
+      "fileHash": "a8b8e8aa",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
-      "src": "../../../node_modules/@vueuse/core/index.mjs",
+      "src": "../../../../node_modules/vitepress/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "c7d3e119",
+      "fileHash": "c6f11246",
       "needsInterop": false
     },
     "@escook/vitepress-theme": {
-      "src": "../../../node_modules/@escook/vitepress-theme/dist/index.js",
+      "src": "../../../../node_modules/@escook/vitepress-theme/dist/index.js",
       "file": "@escook_vitepress-theme.js",
-      "fileHash": "f8ef6e21",
+      "fileHash": "c56a52ee",
       "needsInterop": false
     }
   },
   "chunks": {
-    "EscookMusicBall-BkDBnoZh-E3GY5FP4": {
-      "file": "EscookMusicBall-BkDBnoZh-E3GY5FP4.js"
+    "EscookMusicBall-BkDBnoZh-6I7ZIFD5": {
+      "file": "EscookMusicBall-BkDBnoZh-6I7ZIFD5.js"
     },
-    "chunk-Z5MM7V3J": {
-      "file": "chunk-Z5MM7V3J.js"
+    "chunk-O3YQPVDG": {
+      "file": "chunk-O3YQPVDG.js"
     },
-    "EscookHomeFeatureBefore-D_e5sYrO-SO4YO55S": {
-      "file": "EscookHomeFeatureBefore-D_e5sYrO-SO4YO55S.js"
+    "EscookHomeFeatureBefore-D_e5sYrO-X5NPKCL4": {
+      "file": "EscookHomeFeatureBefore-D_e5sYrO-X5NPKCL4.js"
     },
-    "EscookConfetti-BU05OPRV-PLAMR7R3": {
-      "file": "EscookConfetti-BU05OPRV-PLAMR7R3.js"
+    "EscookConfetti-BU05OPRV-NNC2DOTV": {
+      "file": "EscookConfetti-BU05OPRV-NNC2DOTV.js"
     },
-    "chunk-PAFLGUHY": {
-      "file": "chunk-PAFLGUHY.js"
+    "chunk-LIRKO5IK": {
+      "file": "chunk-LIRKO5IK.js"
     },
     "chunk-5WRI5ZAA": {
       "file": "chunk-5WRI5ZAA.js"

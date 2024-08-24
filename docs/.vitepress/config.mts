@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  srcDir: './docs',
   title: "RixAPI",
   description: "RixAPI是提供各大Ai模型接口聚合管理系统，帮助你仅用一个接口即可对接不同平台的几十种大模型.",
   themeConfig: {
@@ -32,5 +31,10 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/RixAPI/Rix-API' }
     // ]
+  },
+  vite: {
+    ssr: {
+      noExternal: ['@escook/vitepress-theme', 'vitepress']
+    }
   }
 })
