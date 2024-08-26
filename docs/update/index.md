@@ -32,7 +32,7 @@ sidebar: false
 
 ### 8月23日（0.6.5）
 
-- 新增Ideogram（媲美mj，比mj便宜、速度快）可对接rix或官方api
+- 新增Ideogram（媲美mj，比mj便宜、速度快）可对接rix或官方api（对接rix上游请在域名后加/ideogram）
 - 新增供应商管理界面拖拽排序
 - 修复价格页MJ分组显示
 
