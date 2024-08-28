@@ -19,6 +19,7 @@ sidebar: false
 ### 8月28日（0.6.9）
 
 - 新增Runway
+- 新增Vertex
 
 ### 8月26日（0.6.8）
 
