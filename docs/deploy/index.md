@@ -21,6 +21,7 @@ sidebar: false
 
 **注意事项**
    - 需使用mysql和redis
+   - 反代配置里：proxy_set_header Host $host;
    - 如果无法下载，请手动复制
 
 ---
