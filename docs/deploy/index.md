@@ -9,8 +9,75 @@ sidebar: false
 
 ## **部署教程**
 
-1. **下载docker-compose.yml文件**
-    [点击下载](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/KB3JbAFxqolacqx643Ac6PbTn1g/?mount_node_token=YW9GdKOUXotOfcxmR6Dcw2GGnCg&mount_point=docx_file)
+1. **导入docker-compose.yml文件**
+    <details>
+    <summary>点击查看</summary>
+
+    ```
+    version: '3.8'
+
+    services:
+      rix-api:
+        image: rixapi/rixapi:latest
+        # build: .
+        container_name: rix-api
+        restart: always
+        command: --log-dir /app/logs
+        ports:
+          - "3009:3000"
+        volumes:
+          - ./data:/data
+          - ./logs:/app/logs
+        environment:
+          - SQL_DSN=rixapi:rixapipassword@tcp(mysql:3306)/rixapi
+          - REDIS_CONN_STRING=redis://redis
+          - SESSION_SECRET=RixpO13HJsfKHD  # 修改为随机字符串
+          - SYNC_FREQUENCY=30
+          - BATCH_UPDATE_ENABLED=true
+          - GLOBAL_API_RATE_LIMIT=1000000
+          - TZ=Asia/Shanghai
+    #      - NODE_TYPE=slave  # 多机部署时从节点取消注释该行
+    #      - SYNC_FREQUENCY=60  # 需要定期从数据库加载数据时取消注释该行
+
+        depends_on:
+          - redis
+          - mysql
+        networks:
+          - default
+
+      mysql:
+        image: mysql:8.0
+        volumes:
+          - /data/mysql/data:/var/lib/mysql
+          - /data/mysql/conf:/etc/mysql/conf.d
+          - /data/mysql/init:/docker-entrypoint-initdb.d
+          - /etc/localtime:/etc/localtime:ro
+        restart: always
+        environment:
+          - MYSQL_ROOT_PASSWORD=rixapirootpassword
+          - MYSQL_DATABASE=rixapi
+          - MYSQL_USER=rixapi
+          - MYSQL_PASSWORD=rixapipassword
+        networks:
+          - default 
+
+      redis:
+        image: redis:latest
+        container_name: redis
+        restart: always
+        volumes:
+          - /data/redis/data:/data
+          - /data/redis/redis.conf:/usr/local/etc/redis/redis.conf 
+          - /etc/localtime:/etc/localtime:ro
+        command: redis-server /usr/local/etc/redis/redis.conf 
+        networks:
+          - default 
+
+    networks:
+      default: 
+
+    ```
+    </details>
 
 2. **修改environment环境变量（可参照one-api的环境变量）**
 
