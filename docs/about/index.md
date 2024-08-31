@@ -7,6 +7,8 @@ sidebar: false
 
 # 关于我们
 
+本项目在[New API](https://github.com/Calcium-Ion/new-api)的基础上进行二次开发，重构绝大部分核心代码，感谢原作者的无私奉献。 使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及法律法规的情况下使用，不得用于非法用途。
+
 RixAPI 团队致力于 AI 技术的研究与应用，我们希望通过 AI 技术让人们的生活更加便捷。
 
 ## RixAPI 特性
