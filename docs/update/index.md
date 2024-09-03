@@ -16,6 +16,16 @@ sidebar: false
 
 ## 🔥更新记录
 
+### 9月4日（0.9.2）
+
+- 优化内置聊天，只保留1个聊天界面
+    <details>
+    <summary>查看详情</summary>
+    例如聊天链接配置为：https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL={host}&OPENAI_API_KEY={key}
+    如果存在{host}或{key}，就会显示对应的选项框让用户快捷选择
+    </details>
+- 优化令牌界面
+
 ### 9月3日（0.9.1）
 
 - 增加用户单独模型倍率泛匹配，星号匹配任意字符（例如 mj_fast* 可匹配所有mj快速模型）
