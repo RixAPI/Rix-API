@@ -21,7 +21,7 @@ sidebar: false
 - 优化内置聊天，只保留1个聊天界面
     <details>
     <summary>查看详情</summary>
-    例如聊天链接配置为：https://vercel.ddaiai.com/#/s/t?OPENAI_API_BASE_URL={host}&OPENAI_API_KEY={key}
+    例如聊天链接配置为：https://vercel.ddaiai.com/#/?settings={%22key%22:%22{key}%22,%22url%22:%22{host}%22}
     如果存在{host}或{key}，就会显示对应的选项框让用户快捷选择
     </details>
 - 优化令牌界面
