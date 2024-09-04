@@ -12,7 +12,7 @@ sidebar: false
 - 全新工作台
 - 事件提醒
 - 百度/OpenAI文本审核
-- SD/Runway API
+- SD API
 
 ## 🔥更新记录
 
