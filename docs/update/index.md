@@ -22,7 +22,7 @@ sidebar: false
 
 ### 9月9日（0.9.9）
 
-- 新增可灵API（官转格式，可直接对接官方或Rix）
+- 新增可灵API（官转格式，可直接对接官方或Rix）Rix需加/kling
 - 新增MJ本机回调时，通过回调更新任务状态
 - 新增claude渠道对tool处理
 
