@@ -91,8 +91,6 @@ sidebar: false
    - 反代配置里：proxy_set_header Host $host;
    - 如果无法下载，请手动复制
 
----
-
 ## **更新教程**
 
 1. **进入设置页，如有新版本，会提示版本号。**
@@ -104,27 +102,39 @@ sidebar: false
     docker-compose pull && docker-compose up -d
     ```
 
----
+## **常见问题**
 
-## **工具（不是安装指令）**
+  <details>
+  <summary>Uptime Kuma部署怎么嵌入</summary>
+  环境变量添加：UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN=1
+  </details>
 
-### **安装Docker和docker-compose**
+  <details>
+  <summary>模型列表没有模型/价格</summary>
+  需要先在后台配置分组倍率、供应商和模型信息；
+  </details>
 
-```
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
-```
-    
-```
-sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-docker-compose --version
-```
+  <details>
+  <summary>安装Docker</summary>
 
-### **端口转发**
+  ### **安装Docker和docker-compose**
 
-```
-bash <(curl -fsSL https://www.arloor.com/sh/iptablesUtils/natcfg.sh)
-```
+  ```
+  curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+  ```
+      
+  ```
+  sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  sudo chmod +x /usr/local/bin/docker-compose
+  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+  docker-compose --version
+  ```
+  </details>
 
----
+  <details>
+  <summary>端口转发</summary>
+
+  ```
+  bash <(curl -fsSL https://www.arloor.com/sh/iptablesUtils/natcfg.sh)
+  ```
+  </details>
