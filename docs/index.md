@@ -6,7 +6,7 @@ hero:
   name: Rix API
   tagline: RixAPI是提供各大Ai模型接口聚合管理系统，帮助你仅用一个接口即可对接不同平台的几十种大模型.
   image:
-    src: https://ideogram.ai/assets/progressive-image/balanced/response/G7bbKITeT7CIFpOoiximuQ
+    src: https://img.fy6b.com/2024/09/16/0d76bc1e075fe.png
     alt: VitePress
   actions:
     - theme: brand
