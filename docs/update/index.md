@@ -16,6 +16,44 @@ sidebar: false
 
 ## 🔥更新记录
 
+### 9月20日（0.9.22）
+
+- 修复ideogram在非文生图模式下的模型命名问题
+- 新增ideogram反代配置
+    <details>
+    <summary>配置示例</summary>
+    
+    ```
+    location ^~ / {
+    proxy_pass https://ideogram.ai;
+    proxy_set_header Host ideogram.ai;
+    proxy_set_header User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36";
+    proxy_set_header Referer "https://ideogram.ai";
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    
+    # 移除可能暴露代理的头
+    proxy_set_header X-Forwarded-Host "";
+    proxy_set_header X-Forwarded-Server "";
+
+    proxy_http_version 1.1;
+    proxy_set_header Connection "keep-alive";
+    
+    proxy_ssl_server_name on;
+    proxy_ssl_protocols TLSv1.2 TLSv1.3;
+    
+    proxy_connect_timeout 60s;
+    proxy_send_timeout 60s;
+    proxy_read_timeout 60s;
+    
+    # 可能需要移除这些头，如果它们导致问题
+    # add_header X-Cache $upstream_cache_status;
+    # add_header Strict-Transport-Security "max-age=31536000";
+  }
+  ```
+    </details>
+
 ### 9月18日（0.9.21）
 
 - 修复claude原生格式panic
