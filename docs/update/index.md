@@ -16,13 +16,17 @@ sidebar: false
 
 ## 🔥更新记录
 
+### 9月21日（0.9.23）
+
+- 优化代理商的分红累积
+
 ### 9月20日（0.9.22）
 
 - 修复ideogram在非文生图模式下的模型命名问题
 - 新增ideogram反代配置
     <details>
     <summary>配置示例</summary>
-    
+
     ```
     location ^~ / {
     proxy_pass https://ideogram.ai;
