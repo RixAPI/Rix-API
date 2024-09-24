@@ -138,3 +138,12 @@ sidebar: false
   bash <(curl -fsSL https://www.arloor.com/sh/iptablesUtils/natcfg.sh)
   ```
   </details>
+
+  <details>
+  <summary>为什么支付后跳转到127.0.0.1</summary>
+
+  反代配置里修改
+  ```
+  proxy_set_header Host $host;
+  ```
+  </details>
