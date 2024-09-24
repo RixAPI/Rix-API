@@ -20,6 +20,8 @@ sidebar: false
 
 - 修复panic
 - 添加wxpusher配置说明
+- 修复新用户首次进入设置页notfound
+- 优化luma子任务同id
 
 ### 9月23日（1.0.1）
 
