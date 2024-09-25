@@ -86,6 +86,8 @@ sidebar: false
     docker-compose pull && docker-compose up -d
     ```
 
+4. **首次部署管理用用户名root，密码123456**
+
 **注意事项**
    - 需使用mysql和redis
    - 反代配置里：proxy_set_header Host $host;
