@@ -95,7 +95,7 @@ sidebar: false
 
 1. **进入设置页，如有新版本，会提示版本号。**
 
-2. **在docker-compose.yml文件里修改镜像版本，如：rixapi/rixapi:0.2.10 或 rixapi/rixapi:latest**
+2. **在docker-compose.yml文件里修改镜像版本，如：rixapi/rixapi:latest**
 
 3. **更新并重新部署**
     ```
