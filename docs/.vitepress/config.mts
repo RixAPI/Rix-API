@@ -17,6 +17,7 @@ export default defineConfig({
       { text: '部署说明', link: '/deploy' },
       { text: '更新日志', link: '/update' },
       { text: '授权介绍', link: '/about' },
+      { text: '友情链接', link: '/link' },
       { text: 'API 使用文档', link: 'https://apiai.apifox.cn' },
     ],
     footer: {
