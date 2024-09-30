@@ -22,6 +22,8 @@ sidebar: false
 - 细分MJ 微妙放大（mj_mode_upscale_subtle） 创造放大（mj_mode_upscale_creative） （渠道内重新获取模型列表，设置对应模型价格）
 - 优化MJ备用池
 - 优化邀请返利说明
+- 优化整体并发限制（用户的单独并发需要重新设置，默认无限制）
+- 重构登录注册页
 
 ### 9月29日（1.1.1）
 
