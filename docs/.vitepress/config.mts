@@ -6,7 +6,8 @@ export default defineConfig({
   title: "Rix API",
   description: "RixAPI是提供各大Ai模型接口聚合管理系统，帮助你仅用一个接口即可对接不同平台的几十种大模型.",
   head: [
-    ['meta', { name: 'keywords', content: 'rixapi, api, api分发' }],
+    ['link', { rel: 'icon', href: '/logo.ico' }],
+    ['meta', { name: 'keywords', content: 'RixAPI,rix-api,rixapi,api,api分发' }],
     ['meta', { name: 'description', content: 'RixAPI是提供各大Ai模型接口聚合管理系统，帮助你仅用一个接口即可对接不同平台的几十种大模型.' }],
   ],
   themeConfig: {
