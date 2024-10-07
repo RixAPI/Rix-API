@@ -7,6 +7,10 @@ sidebar: false
 
 # 更新日志
 
+## 10月7日（1.1.9）
+
+- 修复/v1/messages aws渠道流式
+
 ## 10月7日（1.1.8）
 
 - 修复/v1/messages存在的问题
