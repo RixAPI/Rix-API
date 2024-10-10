@@ -10,6 +10,7 @@ sidebar: false
 ## 10月10日(1.2.6)
 
 - 添加支持multipart/form-data请求
+- 优化后台加密设置
 
 ## 10月10日(1.2.5)
 
