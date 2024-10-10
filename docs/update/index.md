@@ -7,6 +7,11 @@ sidebar: false
 
 # 更新日志
 
+## 10月10日(1.2.7)
+
+- 优化初始logo
+- 添加i18n
+
 ## 10月10日(1.2.6)
 
 - 添加支持multipart/form-data请求
