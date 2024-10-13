@@ -7,6 +7,11 @@ sidebar: false
 
 # 更新日志
 
+## 10月13日(1.2.13)
+
+- 增加后台设置校验
+- 支持OpenAI/Azure Realtime
+
 ## 10月12日(1.2.12)
 
 - 优化AWS claude渠道禁用
