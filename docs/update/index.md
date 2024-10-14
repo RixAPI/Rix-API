@@ -7,7 +7,7 @@ sidebar: false
 
 # 更新日志
 
-## 10月14日(1.2.18)
+## 10月15日(1.2.18)
 
 - 优化Realtime 逻辑
 - 优化Realtime 错误重试
