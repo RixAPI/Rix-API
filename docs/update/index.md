@@ -7,6 +7,10 @@ sidebar: false
 
 # 更新日志
 
+## 10月15日(1.2.21)
+
+- 优化claude aws/gcp原生格式
+
 ## 10月15日(1.2.20)
 
 - 修复Realtime非重定向下的问题（Sorry）
