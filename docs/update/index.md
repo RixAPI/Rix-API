@@ -7,6 +7,12 @@ sidebar: false
 
 # 更新日志
 
+## 10月23日(1.3.14)
+
+- 增加Flux官方渠道(BFL) 支持dalle格式
+- 修复MJ
+- 支持Anthropic/GCP/AWS claude-3-5-sonnet-20241022
+
 ## 10月22日(1.3.13)
 
 - aws报错返回原始状态码
