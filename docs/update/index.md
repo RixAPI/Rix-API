@@ -7,7 +7,7 @@ sidebar: false
 
 # 更新日志
 
-## 10月30日(1.3.24)
+## 10月31日(1.3.24)
 
 - 修复audio response_format
 - 优化日志
