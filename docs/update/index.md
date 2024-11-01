@@ -7,6 +7,13 @@ sidebar: false
 
 # 更新日志
 
+## 11月1日(1.3.25)
+
+- 新增支持Recraft(Red-panda)模型
+  调用方式：dall-e-3格式 或 官方原生格式（支持更多功能）
+- 修复ideogram跨域
+- 获取模型列表时仅获取可用的模型
+
 ## 10月31日(1.3.24)
 
 - 修复audio response_format

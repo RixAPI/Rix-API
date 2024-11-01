@@ -93,10 +93,15 @@ sidebar: false
     <summary>点击查看</summary>
 
     1.后台设置分组，初始只有default
+
     2.数据库修改所有令牌的group字段 = 分组名称，初始为default
+
     3.对应渠道的分组和后台设置的分组
+
     4.后台设置 供应商/模型 信息
+
     5.后台设置 支付信息
+    
     6.以上为重要设置
 
     </details>
