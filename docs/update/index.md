@@ -12,6 +12,7 @@ sidebar: false
 - 修复Recraft
 - 重构异步任务
 - 新增支持udio
+- 更新依赖
 
 ## 11月1日(1.3.26)
 
