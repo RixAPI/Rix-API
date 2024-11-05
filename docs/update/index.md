@@ -7,6 +7,10 @@ sidebar: false
 
 # 更新日志
 
+## 11月5日(1.3.28)
+
+- 新增支持claude-3-5-haiku-20241022(anthropic/aws/gcp)
+
 ## 11月5日(1.3.27)
 
 - 修复Recraft
