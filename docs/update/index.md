@@ -7,6 +7,13 @@ sidebar: false
 
 # 更新日志
 
+## 11月7日(1.4.1)
+
+- 新增支持Runwayml官方API
+- 优化创意任务详情
+- 新增支持Replicate平台
+- Replicate支持Dall-e-3格式
+
 ## 11月6日(1.4.0)
 
 - 合并NewAPI
