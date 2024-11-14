@@ -9,9 +9,9 @@ hero:
     src: https://img.fy6b.com/2024/09/16/0d76bc1e075fe.png
     alt: VitePress
   actions:
-    - theme: brand
-      text: 演示站
-      link: https://api.ephone.ai
+    # - theme: brand
+    #   text: 演示站
+    #   link: https://api.ephone.ai
     - theme: alt
       text: 更新日志
       link: /update/
