@@ -7,6 +7,10 @@ sidebar: false
 
 # 更新日志
 
+## 11月16日(1.4.15)
+
+- 修复replicate
+
 ## 11月15日(1.4.14)
 
 - 修复runwayml首尾帧
