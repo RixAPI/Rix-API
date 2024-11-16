@@ -7,6 +7,10 @@ sidebar: false
 
 # 更新日志
 
+## 11月16日(1.4.16)
+
+- 添加 mailgun api
+
 ## 11月16日(1.4.15)
 
 - 修复replicate
