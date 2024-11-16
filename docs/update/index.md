@@ -10,6 +10,7 @@ sidebar: false
 ## 11月16日(1.4.16)
 
 - 添加 mailgun api
+- 修复BFL
 
 ## 11月16日(1.4.15)
 
