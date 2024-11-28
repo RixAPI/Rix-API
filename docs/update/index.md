@@ -7,6 +7,11 @@ sidebar: false
 
 # 更新日志
 
+## 11月29日(1.5.3)
+
+- 修复fetch接口
+- 更新兼容luma v2接口
+
 ## 11月28日(1.5.2)
 
 - 修改mj优先级为令牌->AccountFilter
