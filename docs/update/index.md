@@ -7,6 +7,11 @@ sidebar: false
 
 # 更新日志
 
+## 11月28日(1.5.2)
+
+- 修改mj优先级为令牌->AccountFilter
+- 优化完善luma参数
+
 ## 11月28日(1.5.1)
 
 - 优化suno
