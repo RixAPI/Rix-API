@@ -48,8 +48,8 @@ RixAPI 团队致力于 AI 技术的研究与应用，我们希望通过 AI 技�
 
 QQ群：[792836496](https://qm.qq.com/q/GmmMsu2qQM) 
 
-<img src="https://img.fy6b.com/2024/09/16/3cc56775cfb99.jpg" width="50%"/>
-<img src="https://img.fy6b.com/2024/08/24/3e2c4d284e837.png" width="50%"/>
+<img src="https://r2.rixapi.com/3cc56775cfb99.jpg" width="50%"/>
+<img src="https://r2.rixapi.com/3e2c4d284e837.png" width="50%"/>
 
 扫描上方二维码，立即与我们取得联系！
 
