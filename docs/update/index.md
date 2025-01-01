@@ -1,5 +1,8 @@
 ---
-outline: deep
+title: 更新日志
+prev: false
+next: false
+sidebar: false
 ---
 
 # 更新日志
