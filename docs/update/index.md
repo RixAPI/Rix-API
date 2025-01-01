@@ -1137,7 +1137,7 @@ outline: deep
 - 新增邀请返利比例限制
 - 美化充值页
 
-### 以前
+## 以前
 
 - 新增Midjourney不同速率和模型计费
 - 支持Midjourney筛选上游的速率
