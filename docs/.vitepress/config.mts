@@ -27,10 +27,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '指南',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '部署说明', link: '/deploy/' },
+          { text: '更新日志', link: '/update/' },
+          { text: '授权介绍', link: '/about/' },
+          { text: '友情链接', link: '/link/' }
         ]
       }
     ],
@@ -42,6 +44,11 @@ export default defineConfig({
   vite: {
     ssr: {
       noExternal: ['@escook/vitepress-theme', 'vitepress']
+    }
+  },
+  markdown: {
+    headers: {
+      level: [1, 2, 3, 4]  // 显示 h1-h4 级别的标题
     }
   }
 })

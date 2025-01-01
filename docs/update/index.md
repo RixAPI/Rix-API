@@ -1,8 +1,5 @@
 ---
-title: 更新日志
-prev: false
-next: false
-sidebar: false
+outline: deep
 ---
 
 # 更新日志
@@ -699,7 +696,7 @@ sidebar: false
 - 新增每日签到
 - 增加供应商模型拖拽排序
 - 优化样式
-- 价格页重新增加‘可用性’
+- 价格页重新增加'可用性'
 
 ### 10月2日(1.1.3)
 
