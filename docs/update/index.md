@@ -3,6 +3,7 @@ title: 更新日志
 prev: false
 next: false
 sidebar: false
+outline: deep
 ---
 
 # 更新日志
