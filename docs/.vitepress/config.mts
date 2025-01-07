@@ -37,9 +37,9 @@ export default defineConfig({
       }
     ],
 
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/RixAPI/Rix-API' }
-    // ]
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/RixAPI/Rix-API' }
+    ]
   },
   vite: {
     ssr: {
