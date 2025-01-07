@@ -5,7 +5,7 @@
 本项目在[New API](https://github.com/Calcium-Ion/new-api)的基础上进行二次开发，重构绝大部分核心代码，感谢原作者的无私奉献。 必须在遵循法律法规的情况下使用，不得用于非法用途。
 
 [更新日志](./docs/update/index.md)
-[示例站点](https://api.ephone.ai){:target="_blank"}
+[示例站点](https://api.ephone.ai)
 
 ## 功能变化
 ---
