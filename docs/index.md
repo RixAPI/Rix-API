@@ -10,8 +10,8 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 加入QQ群
-      link: https://qm.qq.com/q/o02sHGUeNG
+      text: 更新日志
+      link: /update/
     - theme: alt
       text: 联系客服
       link: /about/
