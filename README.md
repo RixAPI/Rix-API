@@ -7,7 +7,7 @@
 [更新日志](./docs/update/index.md)
 [示例站点](https://api.ephone.ai)
 
-## 功能变化
+## RixAPI功能变化
 - 全新的 UI 界面
 - 全新的更完整的价格页
 - 新增用户仪表盘
