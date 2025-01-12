@@ -19,6 +19,7 @@ sidebar: false
     services:
       rix-api:
         image: rixapi/rixapi:latest
+        # arm镜像请用 rixapi/rixapi-arm64:latest
         # build: .
         container_name: rix-api
         restart: always
@@ -117,7 +118,9 @@ sidebar: false
 
 2. **在docker-compose.yml文件里修改镜像版本，如：rixapi/rixapi:latest**
 
-3. **更新并重新部署**
+3. **arm镜像请用 rixapi/rixapi-arm64:latest**
+
+4. **更新并重新部署**
     ```
     docker-compose pull && docker-compose up -d
     ```
