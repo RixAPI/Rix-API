@@ -39,9 +39,9 @@
 
 如果您有任何疑问或需要帮助，请随时与我们联系。
 
-QQ群：[792836496](https://qm.qq.com/q/GmmMsu2qQM) 
+<!-- QQ群：[792836496](https://qm.qq.com/q/GmmMsu2qQM)  -->
 
-<img src="https://img.fy6b.com/2024/09/16/3cc56775cfb99.jpg" width="50%"/>
+<!-- <img src="https://img.fy6b.com/2024/09/16/3cc56775cfb99.jpg" width="50%"/> -->
 <img src="https://img.fy6b.com/2024/08/24/3e2c4d284e837.png" width="50%"/>
 
 扫描上方二维码，立即与我们取得联系！
