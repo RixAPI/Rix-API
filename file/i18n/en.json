@@ -1781,5 +1781,10 @@
   "超时": "Timeout",
   "良好": "Good",
   "优秀": "Excellent",
-  "消费1w+私聊管理员": "Consume 1w+ private chat with administrator"
+  "消费1w+私聊管理员": "Consume 1w+ private chat with administrator",
+  "iframe中加载": "In iframe",
+  "此项可选，用于复写返回的状态码，比如将claude渠道的400错误复写为500（用于重试），请勿滥用该功能，例如：": "This option is optional, used to rewrite the return status code, for example, rewrite the claude channel's 400 error to 500 (for retry), please do not abuse this function, for example:",
+  "渠道权重": "Channel weight",
+  "请选择模型": "Please select a model",
+  "确定要清空当前聊天历史并恢复到初始状态吗？": "Are you sure you want to clear the current chat history and restore to the initial state?"
 }
