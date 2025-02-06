@@ -1788,5 +1788,18 @@
   "此项可选，用于复写返回的状态码，比如将claude渠道的400错误复写为500（用于重试），请勿滥用该功能，例如：": "This option is optional, used to rewrite the return status code, for example, rewrite the claude channel's 400 error to 500 (for retry), please do not abuse this function, for example:",
   "渠道权重": "Channel weight",
   "请选择模型": "Please select a model",
-  "确定要清空当前聊天历史并恢复到初始状态吗？": "Are you sure you want to clear the current chat history and restore to the initial state?"
+  "确定要清空当前聊天历史并恢复到初始状态吗？": "Are you sure you want to clear the current chat history and restore to the initial state?",
+  "例如填1.5就是站内1": "For example, fill in 1.5 to be 1 in the station",
+  "例如填0.8就是站内1": "For example, fill in 0.8 to be 1 in the station",
+  "例如填1.5就是站内": "For example, fill in 1.5 to be 1 in the station",
+  "例如填0.8就是站内": "For example, fill in 0.8 to be 1 in the station",
+  "基准 1倍率 = ": "The benchmark 1 magnification = ",
+  "因为1倍率=": "Because 1 magnification = ",
+  "按量计费费用 = 令牌分组折扣 × 模型倍率 × (提示token数 + 补全token数 × 补全倍率）/ 500000 (单位：": "The amount charged = token group discount × model magnification × (prompt token number + completion token number × completion magnification) / 500000 (unit: ",
+  "请输入金额": "Please enter the amount",
+  "原因：": "Reason:",
+  "演示站点模式": "Demo site mode",
+  "可选择多个渠道并拖动调整优先级顺序，优先级从高到低": "You can select multiple channels and drag to adjust the priority order, the priority from high to low",
+  "添加备选渠道": "Add backup channel",
+  "可添加多个渠道，优先级从上到下依次降低": "You can add multiple channels, the priority from top to bottom is reduced"
 }
