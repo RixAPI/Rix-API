@@ -12,7 +12,9 @@ outline: deep
 
 ### 2月11日(3.0.4)
 
-- 完善授权码机制
+- 完善授权码机制，环境变量：
+  - LICENSE_TYPE=code
+  - LICENSE_CODE=授权码
 - 修复Anthropic原生格式的自动禁用错误
 
 ### 2月9日(3.0.2)
