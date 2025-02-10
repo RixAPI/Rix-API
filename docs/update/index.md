@@ -16,6 +16,7 @@ outline: deep
   - LICENSE_TYPE=code
   - LICENSE_CODE=授权码
 - 修复Anthropic原生格式的自动禁用错误
+- 修复Playground的系统提示词
 
 ### 2月9日(3.0.2)
 
