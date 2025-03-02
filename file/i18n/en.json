@@ -1803,7 +1803,7 @@
   "添加备选渠道": "Add backup channel",
   "可添加多个渠道，优先级从上到下依次降低": "You can add multiple channels, the priority from top to bottom is reduced",
   "令牌限额": "Token limit",
-  "价格: ${{modelPrice}} * 分组: ${{groupRatio}}": "ModelPrice: ${{modelPrice}} * GroupRatio: ${{groupRatio}}",
-  "模型: ${{modelRatio}} * 分组: ${{groupRatio}}": "ModelRatio: ${{modelRatio}} * GroupRatio: ${{groupRatio}}"
+  "价格: {{modelPrice}} * 分组: {{groupRatio}}": "ModelPrice: {{modelPrice}} * GroupRatio: {{groupRatio}}",
+  "模型: {{modelRatio}} * 分组: {{groupRatio}}": "ModelRatio: {{modelRatio}} * GroupRatio: {{groupRatio}}"
   
 }
