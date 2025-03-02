@@ -1802,6 +1802,8 @@
   "可选择多个渠道并拖动调整优先级顺序，优先级从高到低": "You can select multiple channels and drag to adjust the priority order, the priority from high to low",
   "添加备选渠道": "Add backup channel",
   "可添加多个渠道，优先级从上到下依次降低": "You can add multiple channels, the priority from top to bottom is reduced",
-  "令牌限额": "Token limit"
+  "令牌限额": "Token limit",
+  "价格: {{modelPrice}} * 分组: {{groupRatio}}": "ModelPrice: {{modelPrice}} * GroupRatio: {{groupRatio}}",
+  "模型: {{modelRatio}} * 分组: {{groupRatio}}": "ModelRatio: {{modelRatio}} * GroupRatio: {{groupRatio}}"
   
 }
