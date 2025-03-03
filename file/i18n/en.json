@@ -932,7 +932,7 @@
   "IP黑名单": "IP blacklist",
   "不允许的IP，一行一个": "IPs not allowed, one per line",
   "请选择该渠道所支持的模型": "Please select the model supported by this channel",
-  "次": "PER",
+  "次": "Per",
   "达到限速报错内容": "Error content when the speed limit is reached",
   "不填则使用默认报错": "If not filled in, the default error will be reported.",
   "Midjouney 设置 (可选)": "Midjouney settings (optional)",
