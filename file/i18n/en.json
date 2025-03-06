@@ -1671,7 +1671,7 @@
   "搜索渠道名称": "Search channel name",
   "渠道名称": "Channel name",
   "缓存写入": "Cache write",
-  "(提示费用 + 补全费用 + 缓存写入费用 + 缓存命中费用) * 用户专属模型折扣 * 分组倍率": "(Prompt cost + completion cost + cache writing cost + cache hits) * User exclusive model discount * packet multiplier",
+  "(提示费用 + 补全费用 + 缓存写入费用 + 缓存命中费用) * 用户专属模型折扣 * 分组倍率": "(Prompt cost + completion cost + cache writing cost + cache hits) * User exclusive model discount * Group ratio",
   "允许的IP，一行一个，不填写则不限制": "Allowed IPs, one per line. If not filled in, there will be no limit.",
   "语言包加载失败": "Language pack failed to load",
   "无限额度": "Unlimited limit",
