@@ -605,7 +605,7 @@
   "使用日志": "Usage Logs",
   "Midjourney日志": "Midjourney Logs",
   "数据看板": "Data dashboard",
-  "模型列表": "Model list",
+  "模型列表": "Models",
   "常见问题": "FAQ",
   "免费体验": "Free trial",
   "新用户注册赠送$": "Free $ for new user registration",
@@ -1164,7 +1164,6 @@
   "测试通知发送成功": "Test notification sent successfully",
   "发送测试通知失败": "Failed to send test notification",
   "冷却中...": "Cooling down...",
-  "测试通知": "Test notification",
   "接口凭证": "Interface credentials",
   "13800138000,多个手机号用英文逗号隔开,all表示@所有人": "13800138000, multiple mobile phone numbers separated by commas, all means @everyone",
   "Bearer Token,不需要可以不填": "Bearer Token, don’t need to fill it in",
@@ -1945,5 +1944,7 @@
   "请填写详细信息以开始": "Please fill in the details to get started",
   "帮助中心": "Help",
   "令牌查询": "Token Query",
-  "等级/限制": "Level/Limit"
+  "等级/限制": "Level/Limit",
+  "累积充值": "Cumulative recharge",
+  "仅统计2024-12-27之后": "Only statistics from 2024-12-27 onwards"
 }
