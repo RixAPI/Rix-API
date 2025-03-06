@@ -1923,5 +1923,18 @@
   "步骤简单": "Step simple",
   "咨询合作": "Consult cooperation",
   "提供域名": "Provide domain name",
-  "推广获利": "Promotion profit"
+  "推广获利": "Promotion profit",
+  "个模型": "models",
+  "第一步": "First step",
+  "请先选择想要使用的模型": "Please select the model you want to use first",
+  "第二步": "Second step",
+  "请先在上方选择模型": "Please select the model in the upper part first",
+  "请选择支持该模型的分组（灰色表示不支持当前模型）": "Please select the group that supports the model (gray means the model is not supported)",
+  "请先选择模型": "Please select the model first",
+  "不支持当前模型": "The current model is not supported",
+  "控制回答的随机性，越大越具有创造性，越小越稳定": "Control the randomness of the answer, the larger the more creative, the smaller the more stable",
+  "可选": "Optional",
+  "控制回答的最大长度，0表示不限制": "Control the maximum length of the answer, 0 means no limit",
+  "选择支持该模型的分组": "Select the group that supports the model",
+  "重新生成": "Regenerate"
 }
