@@ -614,7 +614,7 @@
   "您正在使用默认密码！": "You are using the default password!",
   "请立刻修改默认密码！": "Please change the default password immediately!",
   "请输入用户名和密码！": "Please enter username and password!",
-  "用户名/邮箱": "Username/email",
+  "用户名/邮箱": "Username/Email",
   "微信扫码登录": "WeChat scan code to log in",
   "刷新成功": "Refresh successful",
   "刷新失败": "Refresh failed",
@@ -1936,5 +1936,11 @@
   "可选": "Optional",
   "控制回答的最大长度，0表示不限制": "Control the maximum length of the answer, 0 means no limit",
   "选择支持该模型的分组": "Select the group that supports the model",
-  "重新生成": "Regenerate"
+  "重新生成": "Regenerate",
+  "支付超时，请重新发起支付": "Payment timeout, please initiate payment again",
+  "请登录继续": "Please login to continue",
+  "请登录": "Please login",
+  "欢迎回来！": "Welcome!",
+  "我已阅读并同意 ": "I have read and agree to ",
+  "请填写详细信息以开始": "Please fill in the details to get started"
 }
