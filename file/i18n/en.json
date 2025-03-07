@@ -959,7 +959,7 @@
   "管理员设置": "Administrator settings",
   "待更新": "To be updated",
   "支付中..": "Paying",
-  "查看图片": "View pictures",
+  "查看图片": "View",
   "并发限制": "Concurrency limit",
   "正常": "Normal",
   "周期": "Cycle",
@@ -1947,5 +1947,6 @@
   "等级/限制": "Level/Limit",
   "累积充值": "Cumulative recharge",
   "仅统计2024-12-27之后": "Only statistics from 2024-12-27 onwards",
-  "企业通道": "Enterprise channel"
+  "企业通道": "Enterprise channel",
+  "没有可展示的详细信息": "No detailed"
 }
