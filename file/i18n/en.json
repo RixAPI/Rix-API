@@ -2010,6 +2010,13 @@
   "提示 {{input}} tokens / 1M tokens * ${{price}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} * 用户专属模型折扣 {{userRatio}} = ${{total}}": "Prompt {{input}} tokens / 1M tokens * ${{price}} + completion {{completion}} tokens / 1M tokens * ${{compPrice}} * group {{ratio}} * user exclusive model discount {{userRatio}} = ${{total}}",
   "创建缓存：": "Create cache:",
   "特效": "Effects",
-  "联网搜索": "Web Search"
-  
+  "联网搜索": "Web Search",
+  "所有模型可用，自动选择最优渠道。": "All models are available, automatically select the best channel.",
+  "Azure企业渠道，仅包含OpenAI模型，高速无审核。": "Azure enterprise channel, only OpenAI models, high speed without review.",
+  "仅包含OpenAI和Anthropic官方模型，100%纯官方，当前价格：OpenAI3倍，Claude4倍。": "Only OpenAI and Anthropic official models, 100% official, current price: OpenAI 3x, Claude 4x.",
+  "仅包含OpenAI和Anthropic，100%纯官，100%稳定，推荐企业及高稳定需求客户使用。": "Only OpenAI and Anthropic, 100% official, 100% stable, recommended for enterprise and high stability demand customers.",
+  "微软通道": "Azure channel",
+  "官转通道": "Official channel",
+  "逆向通道": "Reverse channel",
+  "默认分组（全模型可用，自动调优）": "Default group (all models available, automatically optimized)"
 }
