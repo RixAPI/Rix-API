@@ -1954,7 +1954,6 @@
   "你好，请问有什么可以帮助您的吗？": "Hello, what can I help you with?",
   "请输入正整数": "Please enter a positive integer",
   "数据库清理": "Database cleanup",
-  "联网搜索": "Internet search",
   "获取数据失败": "Failed to get data",
   "删除成功": "Delete successfully",
   "删除失败": "Delete failed",
@@ -2009,5 +2008,8 @@
   "提示 {{input}} tokens / 1M tokens * ${{price}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} = ${{total}}": "Prompt {{input}} tokens / 1M tokens * ${{price}} + completion {{completion}} tokens / 1M tokens * ${{compPrice}} * group {{ratio}} = ${{total}}",
   "提示 {{nonCacheInput}} tokens / 1M tokens * ${{price}} + 缓存 {{cacheInput}} tokens / 1M tokens * ${{cachePrice}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} * 用户专属模型折扣 {{userRatio}} = ${{total}}": "Prompt {{nonCacheInput}} tokens / 1M tokens * ${{price}} + cache {{cacheInput}} tokens / 1M tokens * ${{cachePrice}} + completion {{completion}} tokens / 1M tokens * ${{compPrice}} * group {{ratio}} * user exclusive model discount {{userRatio}} = ${{total}}",
   "提示 {{input}} tokens / 1M tokens * ${{price}} + 补全 {{completion}} tokens / 1M tokens * ${{compPrice}} * 分组 {{ratio}} * 用户专属模型折扣 {{userRatio}} = ${{total}}": "Prompt {{input}} tokens / 1M tokens * ${{price}} + completion {{completion}} tokens / 1M tokens * ${{compPrice}} * group {{ratio}} * user exclusive model discount {{userRatio}} = ${{total}}",
-  "创建缓存：": "Create cache:"
+  "创建缓存：": "Create cache:",
+  "特效": "Effects",
+  "联网搜索": "Web Search"
+  
 }
