@@ -2019,6 +2019,8 @@
   "官转通道": "Official channel",
   "逆向通道": "Reverse channel",
   "默认分组（全模型可用，自动调优）": "Default group (all models available, automatically optimized)",
+  "仅包含OpenAI和Anthropic官方模型，Claude额外有1.33倍。": "Only OpenAI and Anthropic official models, Claude has an additional 1.33x.",
+  "包含OpenAI、Anthropic、Replicate等多个AI模型，100%纯官，100%稳定，推荐企业及高稳定需求客户使用。": "Contains OpenAI, Anthropic, Replicate, and other AI models, 100% official, 100% stable, recommended for enterprise and high stability demand customers.",
   "Realtime API 可让开发者构建低延迟、多模式体验，包括语音转语音功能。Realtime API 处理的文本和音频单独定价。": "Realtime API allows developers to build low-latency, multi-mode experiences, including voice-to-voice functionality. The text and audio processed by Realtime API are priced separately.",
   "o1-preview 是我们针对需要广泛常识的复杂任务的新推理模型。该模型具有 128K 上下文和 2023 年 10 月的知识截止点。": "o1-preview is our new inference model for complex tasks that require extensive knowledge. The model has 128K context and a knowledge cutoff point of October 2023.",
   "o1-mini 是一种快速、经济高效的推理模型，专为编码、数学和科学用例而定制。该模型具有 128K 上下文和 2023 年 10 月的知识截止点。": "o1-mini is a fast, cost-effective inference model tailored for coding, math, and scientific use cases. The model has 128K context and a knowledge cutoff point of October 2023.",
