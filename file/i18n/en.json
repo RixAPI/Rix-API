@@ -2019,6 +2019,7 @@
   "官转通道": "Official channel",
   "逆向通道": "Reverse channel",
   "默认分组（全模型可用，自动调优）": "Default group (all models available, automatically optimized)",
+  "仅包含OpenAI和Claude逆向模型，支持联网、识图、文件分析等网页版功能。": "Only OpenAI and Claude reverse-engineered models, support web connectivity, image recognition, file analysis, etc.",
   "仅包含OpenAI和Anthropic官方模型，Claude额外有1.33倍。": "Only OpenAI and Anthropic official models, Claude has an additional 1.33x.",
   "包含OpenAI、Anthropic、Replicate等多个AI模型，100%纯官，100%稳定，推荐企业及高稳定需求客户使用。": "Contains OpenAI, Anthropic, Replicate, and other AI models, 100% official, 100% stable, recommended for enterprise and high stability demand customers.",
   "Realtime API 可让开发者构建低延迟、多模式体验，包括语音转语音功能。Realtime API 处理的文本和音频单独定价。": "Realtime API allows developers to build low-latency, multi-mode experiences, including voice-to-voice functionality. The text and audio processed by Realtime API are priced separately.",
