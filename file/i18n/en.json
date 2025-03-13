@@ -978,11 +978,12 @@
   "添加令牌": "Add token",
   "复制BaseURL": "Copy BaseURL",
   "令牌纬度控制 Midjouney 配置，设置优先级：令牌 > 路径参数 > 系统默认": "Token latitude controls Midjouney configuration, setting priority: Token > Path Parameters > System Default",
-  "总消耗额度": "Total consumption amount",
-  "近一分钟内请求次数": "Number of requests in the past minute",
-  "近一分钟内消耗Token数": "Number of tokens consumed in the past minute",
-  "近一分钟内消耗额度": "Quota consumed in the past minute",
-  "预估一天消耗量": "Estimated daily consumption",
+  "总消耗额度": "Total Usage",
+  "近一分钟内请求数": "Request Per Minute",
+  "近一分钟内请求次数": "Request Per Minute",
+  "近一分钟内消耗Token数": "Tokens Per Minute",
+  "近一分钟内消耗额度": "Usage Per Minute",
+  "预估一天消耗量": "Usage Per Day",
   "模型固定价格：": "Model fixed price:",
   "分组折扣：": "Group discount:",
   "用户专属模型折扣：": "User exclusive model discount:",
@@ -2105,4 +2106,5 @@
   "全面升级了Baichuan1-53B的各项能力，Baichuan2-53B不仅数学和逻辑推理能力提升显著，还通过高质量数据体系和搜索增强极大降低了模型幻觉。": "Comprehensively upgraded all capabilities of Baichuan1-53B. Baichuan2-53B not only significantly improved mathematical and logical reasoning abilities, but also greatly reduced model hallucinations through high-quality data systems and search enhancement.",
   "百川智能以Baichuan2大模型为核心，将搜索增强技术与大模型深度融合": "Baichuan Intelligence, with Baichuan2 large model as the core, deeply integrates search enhancement technology with the large model.",
   "192k超长上下文窗口，百川智能以Baichuan2大模型为核心，将搜索增强技术与大模型深度融合": "192k ultra-long context window, Baichuan Intelligence, with Baichuan2 large model as the core, deeply integrates search enhancement technology with the large model."
+  
 }
