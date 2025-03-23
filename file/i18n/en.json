@@ -2264,5 +2264,6 @@
   "企业实名认证后，可获取专属汇款账号": "After the enterprise real-name certification, you can obtain a dedicated payment account",
   "开户银行": "Bank",
   "开发者": "Developer",
-  "模型筛选": "Model filter"
+  "模型筛选": "Model filter",
+  "当前并发数": "Current concurrency"
 }
