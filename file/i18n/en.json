@@ -2290,5 +2290,16 @@
   "开发者筛选": "Developer filter",
   "卡片上的价格并非最终折扣价，点击查看模型详细信息和价格": "The price on the card is not the final discounted price, click to view the detailed information and price of the model",
   "点击引导": "Click guide",
-  "（未防止恶意邀请注册，需实名认证）": "(To prevent malicious invitation registration, real-name certification is required)"
+  "（未防止恶意邀请注册，需实名认证）": "(To prevent malicious invitation registration, real-name certification is required)",
+  "阿里云": "Aliyun",
+  "百度": "Baidu",
+  "华为": "Huawei",
+  "腾讯": "Tencent",
+  "智谱AI": "Zhipu",
+  "百川智能": "Baichuan",
+  "零一万物": "01.AI",
+  "讯飞星火": "Xunfei",
+  "豆包": "Doudou",
+  "腾讯混元": "Tencent"
+  
 }
