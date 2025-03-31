@@ -2307,5 +2307,10 @@
   "支持OpenAI-Dall-e-3和Black Forest Labs官方格式，<a href=\"https://apiai.apifox.cn/api-232960829\" target=\"_blank\">点击查看文档</a>": "Support OpenAI-Dall-e-3 and Black Forest Labs official format, <a href=\"https://apiai.apifox.cn/api-232960829\" target=\"_blank\">click to view the document</a>",
   "<div>与官方API格式完全一致，实测效果媲美Midjourney，且速度更快，并发更高。 已集成了图片国内反代，提供超强并发,<a href=\"https://apiai.apifox.cn/api-207768009\" >点击查看接入文档</a></div>": "<div>The official API format is completely consistent, the test results are媲美Midjourney，且速度更快，并发更高。 Already integrated image domestic proxy, providing super strong concurrency, <a href=\"https://apiai.apifox.cn/api-207768009\" >click to view the access document</a></div>",
   "百度自行研发的文心产业级知识增强大语言模型": "Baidu's self-developed Wenxin industry-level knowledge-enhanced large language model",
-  "此处是一些还暂未归类的支持模型，兼容 OpenAI 格式": "This is some support models that are still not classified, compatible with OpenAI format"
+  "此处是一些还暂未归类的支持模型，兼容 OpenAI 格式": "This is some support models that are still not classified, compatible with OpenAI format",
+  "价格页/供应商设置": "Price page/Supplier settings",
+  "（防止恶意邀请注册，需实名认证）": "(To prevent malicious invitation registration, real-name certification is required)",
+  "音频时长": "Audio duration",
+  "模型价格：${{price}} * {{ratio}} * {{userRatio}} = ${{total}}": "Model price: ${{price}} * {{ratio}} * {{userRatio}} = ${{total}}",
+  "搜索上下文大小": "Search context size"
 }
