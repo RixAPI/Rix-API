@@ -2325,5 +2325,7 @@
   "根据等级、渠道分组、开发者、功能标签筛选模型": "Filter models by level, channel group, developer, and function tag",
   "没有可复制的模型名称": "No model name to copy",
   "复制模型名称": "Copy model name",
-  "所有OpenAI模型的基础价都相当于官方的 1/7.3": "The basic price of all OpenAI models is equivalent to that of the official 1/7.3"
+  "所有OpenAI模型的基础价都相当于官方的 1/7.3": "The basic price of all OpenAI models is equivalent to that of the official 1/7.3",
+  "分组价格，点击卡片查看更多信息": "Group price, click the card to view more information",
+  "以上为": "Above is"
 }
