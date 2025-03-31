@@ -2320,5 +2320,9 @@
   "重排序": "Rerank",
   "函数工具": "Tools",
   "批量处理": "Batch",
-  "可微调": "Fine-tuning"
+  "可微调": "Fine-tuning",
+  "不同的分组可能对应不同的供应商": "Different groups may correspond to different suppliers",
+  "根据等级、渠道分组、开发者、功能标签筛选模型": "Filter models by level, channel group, developer, and function tag",
+  "没有可复制的模型名称": "No model name to copy",
+  "复制模型名称": "Copy model name"
 }
