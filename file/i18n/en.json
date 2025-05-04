@@ -2370,5 +2370,9 @@
   "条记录": "records",
   "导出失败: ": "Export failed: ",
   "导出本页数据": "Export current page data",
-  "导出成功，但数据量超出限制": "Export successful, but the data exceeds the limit"
+  "导出成功，但数据量超出限制": "Export successful, but the data exceeds the limit",
+  "证件类型": "ID card type",
+  "身份证": "ID card",
+  "升级为企业账户": "Upgrade to enterprise account",
+  "额外计费": "Additional charge"
 }
