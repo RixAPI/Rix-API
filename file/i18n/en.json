@@ -2480,7 +2480,7 @@
   "获取签到状态失败:": "Failed to get the check-in status:",
   "官方状态监控按钮": "Official status monitoring button",
   "官方状态监控配置": "Official status monitoring configuration",
-  "官方节点状态": "Official node status",
+  "官方节点状态": "Official status",
   "暂无监控数2据": "No monitoring data",
   "请输入正确的JSON格式": "Please enter the correct JSON format",
   "监控状态": "Monitoring status",
@@ -2540,6 +2540,6 @@
   "亚洲接入点": "Asia access point",
   "全球接入点": "Global access point",
   "无界面接口(适合分发)": "No-interface interface (suitable for distribution)",
-  "查看官方节点状态": "View official node status",
+  "查看官方节点状态": "View official status",
   "优惠剩余": "Discount remaining"
 }
