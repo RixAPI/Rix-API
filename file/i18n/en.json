@@ -2541,5 +2541,12 @@
   "全球接入点": "Global access point",
   "无界面接口(适合分发)": "No-interface interface (suitable for distribution)",
   "查看官方节点状态": "View official status",
-  "优惠剩余": "Discount remaining"
+  "优惠剩余": "Discount remaining",
+  "重要": "Important",
+  "紧急": "Urgent",
+  "通知": "Notice",
+  "更新": "Update",
+  "维护": "Maintenance",
+  "活动": "Activity",
+  "优惠": "Discount"
 }
