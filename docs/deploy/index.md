@@ -80,7 +80,7 @@ sidebar: false
     ```
     </details>
 
-2. **修改environment环境变量（可参照one-api的环境变量）**
+2. **修改environment环境变量（可参照new-api的环境变量）**
 
 3. 
     ```
@@ -114,9 +114,9 @@ sidebar: false
 
 ## **更新教程**
 
-1. **进入设置页，如有新版本，会提示版本号。**
+1. **进入设置页，如有新版本，会提示。**
 
-2. **在docker-compose.yml文件里修改镜像版本，如：rixapi/rixapi:latest**
+2. **在docker-compose.yml文件里确认镜像版本：rixapi/rixapi:latest**
 
 3. **arm镜像请用 rixapi/rixapi-arm64:latest**
 
