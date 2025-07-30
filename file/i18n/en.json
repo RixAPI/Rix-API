@@ -2749,5 +2749,14 @@
   "解析响应数据时发生错误": "Error parsing response data",
   "请求发生错误": "Request error",
   "连接已断开": "Connection closed",
-  "建立连接时发生错误": "Error establishing connection"
+  "建立连接时发生错误": "Error establishing connection",
+  "搜索模型名称...": "Search model name...",
+  "此分组不可用": "This group is not available",
+  "多模态视频编辑": "Multi-modal video editing",
+  "筛选条件": "Filter conditions",
+  "多模态视频编辑-初始化": "Multi-modal video editing-initialization",
+  "多模态视频编辑-添加元素": "Multi-modal video editing-add element",
+  "多模态视频编辑-删除元素": "Multi-modal video editing-delete element",
+  "多模态视频编辑-清除元素": "Multi-modal video editing-clear element",
+  "多模态视频编辑-预览": "Multi-modal video editing-preview"
 }
