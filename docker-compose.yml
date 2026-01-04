@@ -1,56 +1,55 @@
 version: '3.8'
-
-    services:
-      rix-api:
-        image: rixapi/rixapi-2:latest
-        # arm镜像请用 rixapi/rixapi-2-arm64:latest
-        container_name: rix-api
-        restart: always
-        command: --log-dir /app/logs
-        ports:
-          - "3009:3000"
-        volumes:
-          - ./data:/data
-          - ./logs:/app/logs
-        environment:
-          - SQL_DSN=rixapi:rixapipassword@tcp(mysql:3306)/rixapi
-          - REDIS_CONN_STRING=redis://redis
-          - SESSION_SECRET=RixpO13HJsfKHD  # 修改为随机字符串
-          - SYNC_FREQUENCY=30
-          - BATCH_UPDATE_ENABLED=true
-          - GLOBAL_API_RATE_LIMIT=1000000
-          - TZ=Asia/Shanghai
-        depends_on:
-          - redis
-          - mysql
-        networks:
-          - default
-
-      mysql:
-        image: mysql:8.0
-        volumes:
-          - /data/mysql/data:/var/lib/mysql
-          - /data/mysql/conf:/etc/mysql/conf.d
-          - /data/mysql/init:/docker-entrypoint-initdb.d
-        restart: always
-        environment:
-          - MYSQL_ROOT_PASSWORD=rixapirootpassword
-          - MYSQL_DATABASE=rixapi
-          - MYSQL_USER=rixapi
-          - MYSQL_PASSWORD=rixapipassword
-        networks:
-          - default
-
-      redis:
-        image: redis:latest
-        container_name: redis
-        restart: always
-        volumes:
-          - /data/redis/data:/data
-          - /data/redis/redis.conf:/usr/local/etc/redis/redis.conf
-        command: redis-server /usr/local/etc/redis/redis.conf
-        networks:
-          - default
-
+services:
+  rix-api-yanshi:
+    image: rixapi/rixapi-2:latest
+    container_name: rix-api-yanshi
+    restart: always
+    command: --log-dir /app/logs
+    ports:
+      - "3099:3009"
+    volumes:
+      - ./data:/data
+      - ./logs:/app/logs
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - ALLOW_MULTI_LOGIN_ENABLED=true
+      - IMAGE_NAME=rixapi/rixapi-2:latest
+      - SQL_DSN=yanshi:rixapipassword@tcp(mysql-yanshi:3306)/yanshi
+      - REDIS_CONN_STRING=redis://redis-yanshi/4
+      - SESSION_SECRET=RixpOdd13HJsfKHD  # 修改为随机字符串
+      - SYNC_FREQUENCY=30
+      - BATCH_UPDATE_ENABLED=true
+      - GLOBAL_API_RATE_LIMIT=1000000
+      - TZ=Asia/Shanghai
+    depends_on:
+      - redis-yanshi
+      - mysql-yanshi
     networks:
-      default:
+      - yanshi-net
+  mysql-yanshi:
+    image: mysql:8.0
+    container_name: mysql-yanshi
+    volumes:
+      - /data/mysql/data-yanshi:/var/lib/mysql
+      - /data/mysql/conf-yanshi:/etc/mysql/conf.d
+      - /data/mysql/init-yanshi:/docker-entrypoint-initdb.d
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=rixapirootpassword
+      - MYSQL_DATABASE=yanshi
+      - MYSQL_USER=yanshi
+      - MYSQL_PASSWORD=rixapipassword
+    networks:
+      - yanshi-net
+  redis-yanshi:
+    image: redis:latest
+    container_name: redis-yanshi
+    restart: always
+    volumes:
+      - /data/redis/data-yanshi:/data
+      - /data/redis/redis-yanshi.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    networks:
+      - yanshi-net
+networks:
+  yanshi-net:
