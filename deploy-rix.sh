@@ -3,8 +3,8 @@ set -e
 
 usage() {
     echo "用法: $0 [up|down]"
-    echo "  up    部署/更新服务组"
-    echo "  down  停止并移除服务组"
+    echo "  up    部署或更新服务组"
+    echo "  down  停止并移除指定服务组"
     exit 1
 }
 
@@ -24,33 +24,7 @@ echo "---------------------------------------"
 
 COMPOSE_FILE="docker-compose-${GROUP_NAME}.yml"
 
-# 架构选择
-echo "请选择部署架构:"
-echo "1) amd64/x86_64 (主流服务器/PC)"
-echo "2) arm64        (如树莓派、部分国产ARM服务器)"
-while true; do
-    read -p "输入选项 [1/2]，默认 1: " ARCH_OPT
-    ARCH_OPT=${ARCH_OPT:-1}
-    if [[ "$ARCH_OPT" == "1" ]]; then
-        IMAGE="rixapi/rixapi-2"
-        break
-    elif [[ "$ARCH_OPT" == "2" ]]; then
-        IMAGE="rixapi/rixapi-2-arm64"
-        break
-    else
-        echo "无效选项，请输入1或2。"
-    fi
-done
-
-# 镜像版本选择
-read -p "请输入镜像版本（如 latest、6.0.0，回车默认latest）: " VERSION
-VERSION=${VERSION:-latest}
-FULL_IMAGE="${IMAGE}:${VERSION}"
-
-echo "镜像已选择：$FULL_IMAGE"
-echo "---------------------------------------"
-
-# 检查docker compose命令
+# 检查 docker compose 命令
 if command -v docker-compose &> /dev/null; then
     COMPOSE_CMD="docker-compose -f $COMPOSE_FILE"
 elif command -v docker &> /dev/null && docker compose version &> /dev/null; then
@@ -69,9 +43,33 @@ if [ "$ACTION" = "down" ]; then
     $COMPOSE_CMD down
     echo "已停止。"
     exit 0
-elif [ "$ACTION" != "up" ]; then
-    usage
 fi
+
+# up 的部分：需要全部交互参数
+# 架构选择
+echo "请选择部署架构:"
+echo "1) amd64/x86_64 (主流服务器/PC)"
+echo "2) arm64        (如树莓派/国产ARM服务器)"
+while true; do
+    read -p "输入选项 [1/2]，默认 1: " ARCH_OPT
+    ARCH_OPT=${ARCH_OPT:-1}
+    if [[ "$ARCH_OPT" == "1" ]]; then
+        IMAGE="rixapi/rixapi-2"
+        break
+    elif [[ "$ARCH_OPT" == "2" ]]; then
+        IMAGE="rixapi/rixapi-2-arm64"
+        break
+    else
+        echo "无效选项，请输入1或2。"
+    fi
+done
+
+# 镜像版本选择
+read -p "请输入镜像版本（如 latest、6.0.0，回车默认latest）: " VERSION
+VERSION=${VERSION:-latest}
+FULL_IMAGE="${IMAGE}:${VERSION}"
+echo "镜像已选择：$FULL_IMAGE"
+echo "---------------------------------------"
 
 # 选择端口
 while true; do
@@ -81,14 +79,12 @@ while true; do
         echo "端口必须为1024~65535的数字！"
         continue
     fi
-    # 检查端口是否被占用
     if ss -lnt | awk '{print $4}' | grep -E "[.:]$PORT$" > /dev/null ; then
         echo "端口 $PORT 已被占用，请换一个！"
         continue
     fi
     break
 done
-
 echo "---------------------------------------"
 
 # 生成 docker-compose 文件
