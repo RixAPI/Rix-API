@@ -1,0 +1,56 @@
+version: '3.8'
+
+    services:
+      rix-api:
+        image: rixapi/rixapi-2:latest
+        # arm镜像请用 rixapi/rixapi-2-arm64:latest
+        container_name: rix-api
+        restart: always
+        command: --log-dir /app/logs
+        ports:
+          - "3009:3000"
+        volumes:
+          - ./data:/data
+          - ./logs:/app/logs
+        environment:
+          - SQL_DSN=rixapi:rixapipassword@tcp(mysql:3306)/rixapi
+          - REDIS_CONN_STRING=redis://redis
+          - SESSION_SECRET=RixpO13HJsfKHD  # 修改为随机字符串
+          - SYNC_FREQUENCY=30
+          - BATCH_UPDATE_ENABLED=true
+          - GLOBAL_API_RATE_LIMIT=1000000
+          - TZ=Asia/Shanghai
+        depends_on:
+          - redis
+          - mysql
+        networks:
+          - default
+
+      mysql:
+        image: mysql:8.0
+        volumes:
+          - /data/mysql/data:/var/lib/mysql
+          - /data/mysql/conf:/etc/mysql/conf.d
+          - /data/mysql/init:/docker-entrypoint-initdb.d
+        restart: always
+        environment:
+          - MYSQL_ROOT_PASSWORD=rixapirootpassword
+          - MYSQL_DATABASE=rixapi
+          - MYSQL_USER=rixapi
+          - MYSQL_PASSWORD=rixapipassword
+        networks:
+          - default
+
+      redis:
+        image: redis:latest
+        container_name: redis
+        restart: always
+        volumes:
+          - /data/redis/data:/data
+          - /data/redis/redis.conf:/usr/local/etc/redis/redis.conf
+        command: redis-server /usr/local/etc/redis/redis.conf
+        networks:
+          - default
+
+    networks:
+      default:
