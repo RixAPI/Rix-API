@@ -14,19 +14,41 @@ fi
 
 ACTION="$1"
 
+echo "---------------------------------------"
 read -p "请输入本服务组名称（建议英文/数字，无空格。例如 yanshi、test1、prod）: " GROUP_NAME
 if [ -z "$GROUP_NAME" ]; then
     echo "组名不能为空！"
     exit 1
 fi
+echo "---------------------------------------"
 
 COMPOSE_FILE="docker-compose-${GROUP_NAME}.yml"
 
+# 架构选择
+echo "请选择部署架构:"
+echo "1) amd64/x86_64 (主流服务器/PC)"
+echo "2) arm64        (如树莓派、部分国产ARM服务器)"
+while true; do
+    read -p "输入选项 [1/2]，默认 1: " ARCH_OPT
+    ARCH_OPT=${ARCH_OPT:-1}
+    if [[ "$ARCH_OPT" == "1" ]]; then
+        IMAGE="rixapi/rixapi-2:latest"
+        break
+    elif [[ "$ARCH_OPT" == "2" ]]; then
+        IMAGE="rixapi/rixapi-2-arm64:latest"
+        break
+    else
+        echo "无效选项，请输入1或2。"
+    fi
+done
+echo "镜像已选择：$IMAGE"
+echo "---------------------------------------"
+
 # 检查docker compose命令
 if command -v docker-compose &> /dev/null; then
-    COMPOSE="docker-compose -f $COMPOSE_FILE"
+    COMPOSE_CMD="docker-compose -f $COMPOSE_FILE"
 elif command -v docker &> /dev/null && docker compose version &> /dev/null; then
-    COMPOSE="docker compose -f $COMPOSE_FILE"
+    COMPOSE_CMD="docker compose -f $COMPOSE_FILE"
 else
     echo "docker-compose 未安装。请先安装 Docker Compose。" >&2
     exit 1
@@ -38,7 +60,7 @@ if [ "$ACTION" = "down" ]; then
         exit 1
     fi
     echo "停止并清理服务组 $GROUP_NAME..."
-    $COMPOSE down
+    $COMPOSE_CMD down
     echo "已停止。"
     exit 0
 elif [ "$ACTION" != "up" ]; then
@@ -61,12 +83,14 @@ while true; do
     break
 done
 
-# 生成 compose 文件
-cat > $COMPOSE_FILE <<EOF
+echo "---------------------------------------"
+
+# 生成 docker-compose 文件
+cat > "$COMPOSE_FILE" <<EOF
 version: '3.8'
 services:
   rix-api-${GROUP_NAME}:
-    image: rixapi/rixapi-2:latest
+    image: ${IMAGE}
     container_name: rix-api-${GROUP_NAME}
     restart: always
     command: --log-dir /app/logs
@@ -78,7 +102,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - ALLOW_MULTI_LOGIN_ENABLED=true
-      - IMAGE_NAME=rixapi/rixapi-2:latest
+      - IMAGE_NAME=${IMAGE}
       - SQL_DSN=${GROUP_NAME}:rixapipassword@tcp(mysql-${GROUP_NAME}:3306)/${GROUP_NAME}
       - REDIS_CONN_STRING=redis://redis-${GROUP_NAME}/4
       - SESSION_SECRET=RixpOdd13HJsfKHD
@@ -121,15 +145,16 @@ networks:
 EOF
 
 echo "$COMPOSE_FILE 已生成."
+echo "---------------------------------------"
 
-echo "拉取镜像..."
-$COMPOSE pull
+echo "拉取最新镜像..."
+$COMPOSE_CMD pull
 
 echo "下线旧服务(不存在则跳过)..."
-$COMPOSE down
+$COMPOSE_CMD down
 
-echo "启动..."
-$COMPOSE up -d
+echo "启动服务..."
+$COMPOSE_CMD up -d
 
-echo "已部署。服务状态如下："
-$COMPOSE ps
+echo "已部署，服务状态如下："
+$COMPOSE_CMD ps
