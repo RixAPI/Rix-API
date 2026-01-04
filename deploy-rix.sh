@@ -32,16 +32,22 @@ while true; do
     read -p "输入选项 [1/2]，默认 1: " ARCH_OPT
     ARCH_OPT=${ARCH_OPT:-1}
     if [[ "$ARCH_OPT" == "1" ]]; then
-        IMAGE="rixapi/rixapi-2:latest"
+        IMAGE="rixapi/rixapi-2"
         break
     elif [[ "$ARCH_OPT" == "2" ]]; then
-        IMAGE="rixapi/rixapi-2-arm64:latest"
+        IMAGE="rixapi/rixapi-2-arm64"
         break
     else
         echo "无效选项，请输入1或2。"
     fi
 done
-echo "镜像已选择：$IMAGE"
+
+# 镜像版本选择
+read -p "请输入镜像版本（如 latest、6.0.0，回车默认latest）: " VERSION
+VERSION=${VERSION:-latest}
+FULL_IMAGE="${IMAGE}:${VERSION}"
+
+echo "镜像已选择：$FULL_IMAGE"
 echo "---------------------------------------"
 
 # 检查docker compose命令
@@ -90,7 +96,7 @@ cat > "$COMPOSE_FILE" <<EOF
 version: '3.8'
 services:
   rix-api-${GROUP_NAME}:
-    image: ${IMAGE}
+    image: ${FULL_IMAGE}
     container_name: rix-api-${GROUP_NAME}
     restart: always
     command: --log-dir /app/logs
@@ -102,7 +108,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - ALLOW_MULTI_LOGIN_ENABLED=true
-      - IMAGE_NAME=${IMAGE}
+      - IMAGE_NAME=${FULL_IMAGE}
       - SQL_DSN=${GROUP_NAME}:rixapipassword@tcp(mysql-${GROUP_NAME}:3306)/${GROUP_NAME}
       - REDIS_CONN_STRING=redis://redis-${GROUP_NAME}/4
       - SESSION_SECRET=RixpOdd13HJsfKHD
