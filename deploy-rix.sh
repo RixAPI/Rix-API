@@ -1,7 +1,19 @@
 #!/bin/bash
 set -e
 
-# 1. 让用户输入组名
+usage() {
+    echo "用法: $0 [up|down]"
+    echo "  up    部署/更新服务组"
+    echo "  down  停止并移除服务组"
+    exit 1
+}
+
+if [ $# -ne 1 ]; then
+    usage
+fi
+
+ACTION="$1"
+
 read -p "请输入本服务组名称（建议英文/数字，无空格。例如 yanshi、test1、prod）: " GROUP_NAME
 if [ -z "$GROUP_NAME" ]; then
     echo "组名不能为空！"
@@ -10,7 +22,46 @@ fi
 
 COMPOSE_FILE="docker-compose-${GROUP_NAME}.yml"
 
-# 2. 用输入的组名动态生成 docker-compose.yml
+# 检查docker compose命令
+if command -v docker-compose &> /dev/null; then
+    COMPOSE="docker-compose -f $COMPOSE_FILE"
+elif command -v docker &> /dev/null && docker compose version &> /dev/null; then
+    COMPOSE="docker compose -f $COMPOSE_FILE"
+else
+    echo "docker-compose 未安装。请先安装 Docker Compose。" >&2
+    exit 1
+fi
+
+if [ "$ACTION" = "down" ]; then
+    if [ ! -f "$COMPOSE_FILE" ]; then
+        echo "未找到 $COMPOSE_FILE，无法停止该组"
+        exit 1
+    fi
+    echo "停止并清理服务组 $GROUP_NAME..."
+    $COMPOSE down
+    echo "已停止。"
+    exit 0
+elif [ "$ACTION" != "up" ]; then
+    usage
+fi
+
+# 选择端口
+while true; do
+    read -p "请输入API对外端口号（默认3099，按回车使用默认）: " PORT
+    PORT=${PORT:-3099}
+    if ! [[ "$PORT" =~ ^[0-9]+$ ]] || [ "$PORT" -lt 1024 ] || [ "$PORT" -gt 65535 ]; then
+        echo "端口必须为1024~65535的数字！"
+        continue
+    fi
+    # 检查端口是否被占用
+    if ss -lnt | awk '{print $4}' | grep -E "[.:]$PORT$" > /dev/null ; then
+        echo "端口 $PORT 已被占用，请换一个！"
+        continue
+    fi
+    break
+done
+
+# 生成 compose 文件
 cat > $COMPOSE_FILE <<EOF
 version: '3.8'
 services:
@@ -20,7 +71,7 @@ services:
     restart: always
     command: --log-dir /app/logs
     ports:
-      - "3009:3009"
+      - "${PORT}:3009"
     volumes:
       - ./data-${GROUP_NAME}:/data
       - ./logs-${GROUP_NAME}:/app/logs
@@ -71,25 +122,14 @@ EOF
 
 echo "$COMPOSE_FILE 已生成."
 
-# 3. 检查 docker-compose 命令
-if command -v docker-compose &> /dev/null; then
-    COMPOSE="docker-compose -f $COMPOSE_FILE"
-elif command -v docker &> /dev/null && docker compose version &> /dev/null; then
-    COMPOSE="docker compose -f $COMPOSE_FILE"
-else
-    echo "docker-compose 未安装。请先安装 Docker Compose。" >&2
-    exit 1
-fi
-
-# 4. 拉取、下线、上线
 echo "拉取镜像..."
 $COMPOSE pull
 
-echo "移除旧容器（如果有）..."
+echo "下线旧服务(不存在则跳过)..."
 $COMPOSE down
 
-echo "启动新服务..."
+echo "启动..."
 $COMPOSE up -d
 
-echo "服务部署完成，当前服务状态："
+echo "已部署。服务状态如下："
 $COMPOSE ps
