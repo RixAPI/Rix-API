@@ -54,10 +54,10 @@ while true; do
     read -p "输入选项 [1/2]，默认 1: " ARCH_OPT
     ARCH_OPT=${ARCH_OPT:-1}
     if [[ "$ARCH_OPT" == "1" ]]; then
-        IMAGE="rixapi/rixapi-2"
+        IMAGE="rixapi/rixapi-pro"
         break
     elif [[ "$ARCH_OPT" == "2" ]]; then
-        IMAGE="rixapi/rixapi-2-arm64"
+        IMAGE="rixapi/rixapi-pro-arm64"
         break
     else
         echo "无效选项，请输入1或2。"
