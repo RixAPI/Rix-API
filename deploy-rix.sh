@@ -104,7 +104,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - ALLOW_MULTI_LOGIN_ENABLED=true
-      - IMAGE_NAME=${FULL_IMAGE}
       - SQL_DSN=${GROUP_NAME}:rixapipassword@tcp(mysql-${GROUP_NAME}:3306)/${GROUP_NAME}
       - REDIS_CONN_STRING=redis://redis-${GROUP_NAME}/4
       - SESSION_SECRET=RixpOdd13HJsfKHD
