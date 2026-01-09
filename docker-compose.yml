@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   rix-api-yanshi:
-    image: rixapi/rixapi-2:latest
+    image: rixapi/rixapi-pro:latest
     container_name: rix-api-yanshi
     restart: always
     command: --log-dir /app/logs
@@ -13,7 +13,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - ALLOW_MULTI_LOGIN_ENABLED=true
-      - IMAGE_NAME=rixapi/rixapi-2:latest
       - SQL_DSN=yanshi:rixapipassword@tcp(mysql-yanshi:3306)/yanshi
       - REDIS_CONN_STRING=redis://redis-yanshi/4
       - SESSION_SECRET=RixpOdd13HJsfKHD  # 修改为随机字符串
